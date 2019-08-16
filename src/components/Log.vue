@@ -95,7 +95,8 @@
             }else{
               localStorage.setItem("token", response.data.access_token);
               localStorage.setItem("name", this.name);
-              location.href="http://localhost:8080/#/index"
+              // location.href="http://localhost:8080/#/index"
+              this.$router.push({name: '/index'})
             }
 
           })
